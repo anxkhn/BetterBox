@@ -107,7 +107,7 @@ export function Component() {
                     prefetch={false}
                     onClick={(event) => handleLinkClick(event, "learnMore")}
                   >
-                    Learn More
+                    How to install?
                   </Link>
                 </div>
               </div>
@@ -151,7 +151,7 @@ export function Component() {
                     prefetch={false}
                     onClick={(event) => handleLinkClick(event, "filter")}
                   >
-                    Learn More
+                    How to install?
                   </Link>
                 </div>
               </div>
@@ -183,7 +183,12 @@ export function Component() {
                 <XIcon className="h-6 w-6" />
               </button>
               <h2 className="text-2xl font-bold">Filterlist Details</h2>
-              <p>Here you can include details about the filterlist feature.</p>
+              <p>
+                Step 1: Ensure you have an adblocker installed. We recommend using uBlock Origin, but other adblockers are also supported.
+                <br />
+                Step 2: To add the filter list, you can either import it externally or right-click the &quot;Install Filterlist&quot; button, select
+                &quot;uBlock Origin,&quot; and choose &quot;Subscribe to Filterlist.&quot;
+              </p>
             </div>
           </Modal>
         )}
@@ -193,8 +198,14 @@ export function Component() {
               <button className="close-button" onClick={closeModal}>
                 <XIcon className="h-6 w-6" />
               </button>
-              <h2 className="text-2xl font-bold">Learn More</h2>
-              <p>Here you can include more information about the Learn More feature.</p>
+              <h2 className="text-2xl font-bold">How to use?</h2>
+              <p>
+                Step 1: Ensure your bookmarks bar is visible. For Windows, press Ctrl + Shift + B. For Mac, press Cmd + Shift + B.
+                <br />
+                Step 2: Drag and drop the &quot;Use BetterBox&quot; button to your bookmarks bar.
+                <br />
+                Step 3: On AmbitionBox.com, simply press the bookmarked shortcut.
+              </p>
             </div>
           </Modal>
         )}
