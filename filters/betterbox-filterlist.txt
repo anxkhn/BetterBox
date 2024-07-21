@@ -1,0 +1,19 @@
+! Filterlist release by Betterbox. 
+! download: www.github.com/anxkhn/betterbox
+
+[Adblock Plus]
+! Title: anxkhn's betterbox filters
+! Description: Ambitionbox filters 
+! Homepage: https://github.com/anxkhn/betterbox
+! Expires: 30 days (update frequency)
+! Version: 20 July 2024
+! Syntax: AdBlock
+
+! Jul 20, 2024 https://www.ambitionbox.com
+www.ambitionbox.com##.overlay
+www.ambitionbox.com##.ab-chatbtn
+www.ambitionbox.com##.contribute-popup
+www.ambitionbox.com##.reviews_floating_container
+www.ambitionbox.com##.mg-btm-20.aypf-widget.ab_card
+www.ambitionbox.com##.userfeedbackmenu__feedback-button
+www.ambitionbox.com##.globalCard--outline.globalCard.lock
