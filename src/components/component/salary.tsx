@@ -1,4 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, CSSProperties } from "react";
+
+type StylesType = {
+  [key: string]: CSSProperties;
+};
 
 const SalaryComponent: React.FC = () => {
   const [isBlurred, setIsBlurred] = useState(false);
@@ -38,19 +42,19 @@ const SalaryComponent: React.FC = () => {
     return () => clearInterval(interval);
   }, [isBlurred]);
 
-  const styles = {
+  const styles: StylesType = {
     body: {
       fontFamily: "proxima-nova, Arial, sans-serif",
       fontSize: "1rem",
-      lineHeight: "1.5",
+      lineHeight: 1.5,
       margin: 0,
-      padding: "20px", // Added padding
+      padding: "20px",
       boxSizing: "border-box",
       WebkitTapHighlightColor: "transparent",
-      backgroundColor: "#ffffff", // Set background color to white
-      borderRadius: "8px", // Rounded corners
-      border: "1px solid #e0e0e0", // Small border line
-    },
+      backgroundColor: "#ffffff",
+      borderRadius: "8px",
+      border: "1px solid #e0e0e0",
+    } as CSSProperties,
     rowLeftWrapper: {
       position: "relative",
       display: "flex",
@@ -73,12 +77,12 @@ const SalaryComponent: React.FC = () => {
       letterSpacing: "normal",
       color: "#1e223c",
       fontSize: "1.75rem",
-      lineHeight: "1.43",
+      lineHeight: 1.43,
     },
     rowLeftSalary: {
       color: "#1e223c",
       lineHeight: "2.25rem",
-      filter: `blur(${blurIntensity}px)`,
+      filter: `blur(${blurIntensity}px)` as any,
       transition: "filter 0.3s ease-out",
     },
     bodyMedium: {
@@ -86,7 +90,7 @@ const SalaryComponent: React.FC = () => {
       letterSpacing: "normal",
       color: "#1e223c",
       fontSize: "0.875rem",
-      lineHeight: "1.43",
+      lineHeight: 1.43,
     },
     rowLeftSalarySubtext: {
       color: "#5e6b92",
@@ -104,7 +108,7 @@ const SalaryComponent: React.FC = () => {
       backgroundColor: "#5e6b92",
       fontSize: "0.6875rem",
       fontWeight: 500,
-      lineHeight: "1.64",
+      lineHeight: 1.64,
       textAlign: "center",
       borderRadius: "6px",
       padding: "11px 12px",
@@ -136,13 +140,13 @@ const SalaryComponent: React.FC = () => {
     styleC3Isa: {
       borderRadius: "4px",
       background: "rgba(255, 255, 255, 0.4)",
-      filter: `blur(${blurIntensity}px)`,
+      filter: `blur(${blurIntensity}px)` as any,
       userSelect: "none",
     },
     styleMCOUY: {
       borderRadius: "4px",
       background: "rgba(255, 255, 255, 0.4)",
-      filter: `blur(${blurIntensity}px)`,
+      filter: `blur(${blurIntensity}px)` as any,
       userSelect: "none",
     },
   };
